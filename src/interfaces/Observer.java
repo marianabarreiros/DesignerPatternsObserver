@@ -10,5 +10,7 @@ package interfaces;
  * @author Win-7
  */
 public interface Observer {
+
+    void update();
     
 }

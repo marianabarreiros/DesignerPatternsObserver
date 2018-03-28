@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package concreteobserver;
+package test;
 
+import concreteobserver.GmailClients;
 import concretesubjects.Celular;
 import interfaces.Observer;
+import subject.Subject;
 
 /**
  *
- * @author Win-7
+ * @author qt
  */
-public class GmailClients implements Observer{
-
-    @Override
-    public void update() {
-        System.out.println("Cliente g-mail recebendo atualização do produto");
+public class RunApp {
+    public static void main(String[] args) {
+        Observer gmail = new GmailClients();
+        Subject celular = new Celular("MotoX", 1854.58);
     }
 }
