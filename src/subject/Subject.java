@@ -6,6 +6,7 @@
 package subject;
 
 import interfaces.Observer;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,16 +14,16 @@ import java.util.List;
  * @author Win-7
  */
 public class Subject {
-    private List<Observer> observers;
+    private List<Observer> observers = new ArrayList<>();
     
     public void attach(Observer obs){
         observers.add(obs);
-        System.out.println("Observador " + obs + " adicionado.");
+        System.out.println("Observador " + obs.getClass().getSimpleName() + " adicionado.");
     }
     
     public void detach(Observer obs){
         observers.remove(obs);
-        System.out.println("Observador " + obs + " deletado.");
+        System.out.println("Observador " + obs.getClass().getSimpleName() + " deletado.");
     }
     
     public void Notify(){

@@ -23,5 +23,6 @@ public class RunApp {
         
         celular.attach(gmail);
         celular.attach(yahoo);
+        celular.Notify();
     }
 }

@@ -26,6 +26,7 @@ public class Celular extends Subject {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+        this.Notify();
     }
 
     public Double getValor() {
@@ -34,6 +35,7 @@ public class Celular extends Subject {
 
     public void setValor(Double valor) {
         this.valor = valor;
+        this.Notify();
     }
     
     

@@ -16,6 +16,6 @@ public class GmailClients implements Observer{
 
     @Override
     public void update() {
-        System.out.println("Cliente g-mail recebendo atualização do produto");
+        System.out.println("Cliente G-mail recebendo atualização do produto");
     }
 }
